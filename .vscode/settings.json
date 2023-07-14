@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "laplacianFoam.C": "cpp",
-        "laplacianMultiFoam.C": "cpp"
+        "laplacianMultiFoam.C": "cpp",
+        "laplacianInternalHeatMultiFoam.C": "cpp"
     }
 }

@@ -30,6 +30,21 @@ volScalarField DT
     // dimensionedScalar(dimViscosity, Zero)
 );
 
+Info<< "Reading Internal Heat ST\n" << endl;
+
+volScalarField ST
+(
+    IOobject
+    (
+        "ST",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
 if (!DT.headerOk())
 {
     IOdictionary transportProperties
